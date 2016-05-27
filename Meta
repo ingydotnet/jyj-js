@@ -1,0 +1,36 @@
+=meta: 0.0.2
+
+name: jyj
+version: 0.0.1
+abstract: JSON <-> YAML Converter
+homepage: http://yaml.org
+tag: [yaml, json, convert]
+license: MIT
+copyright: 2016
+
+author:
+  name: Ingy döt Net
+  email: ingy@ingy.net
+  homepage: http://ingy.net
+  github: ingydotnet
+  twitter: ingydotnet
+  freenode: ingy
+
+devel:
+  git: https://github.com/ingydotnet/jyj-js
+  bug: https://github.com/ingydotnet/jyj-js/issues
+  irc: irc.freenode.net#yaml
+
+=npm:
+  bin:
+    jyj: ./bin/jyj
+  engines:
+    node: '>=0.4.0'
+  dependencies:
+    argparse: '>=0'
+    lodash: '>=0'
+    js-yaml: '>=0'
+  devDependencies:
+    coffee-script: '>=1.3.3'
+  scripts:
+    test: coffee -e '(require "./test/lib/Test/Harness").run()' test
