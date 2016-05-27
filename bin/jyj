@@ -46,5 +46,6 @@ else
     output = JSON.stringify data
   else
     output = JSON.stringify data, null, 2
+    output += '\n'
 
 process.stdout.write output
